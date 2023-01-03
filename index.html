@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Four</title>
+
+    <style>
+        label{
+            display: flex;
+            margin-bottom:10px;
+        }
+        table{
+            border-collapse:collapse;
+            text-align: center;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-color: dodgerblue;
+        }
+        th{
+            color:dodgerblue;
+        }
+      body{
+        width:100%;
+      }
+        nav>ul{
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        nav ul li{
+            list-style:none;
+            margin-right:15px;
+            border-bottom: 0.59px solid black;
+            padding: 5px 10px;
+        }
+        nav ul li:hover{
+            background-color: rgb(7, 224, 152);
+            cursor: pointer;
+            border-radius: 10px 10px 0 0;
+            border-bottom:1px solid rgb(2, 131, 71);
+        }
+        nav li .dropdown{
+            display: none;
+            position: absolute;
+            top:30px;
+        }
+        nav li:hover .dropdown{
+            display: block;
+            background-color: rgb(223, 151, 64);
+            padding: 0;
+            margin-right:0px;
+        }
+        .nxt-drop{
+            display: none;
+        }
+        .nxt:hover .nxt-drop{
+            display: block;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Blog</li>
+                <li>
+                    Contact
+                    <ul class="dropdown">
+                        <li>facebook</li>
+                        <li class="nxt">
+                            google
+                            <ul class="nxt-drop">
+                                <li>youtube</li>
+                                <li>gmail</li>
+                                <li>whatsapp</li>
+                            </ul>
+                        </li>
+                        <li>email</li>
+                    </ul>
+                </li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <h1>This is form</h1>
+    <form>
+        <label for="name">
+            Your Name :
+            <input type="text" name="name" id="form" placeholder="your name">
+        </label>
+        <label for="email">
+            Your Email :
+            <input type="Email" name="email" id="form" placeholder="your email">
+        </label>
+        <fieldset>
+            <legend>Select Only one Team</legend>
+            <label for="team">
+                <input type="radio" name="france" id="team">
+                Argentina
+            </label>
+            <label for="team">
+                <input type="radio" name="france" id="team">
+                Brazil
+            </label>
+            <label for="team">
+                <input type="radio" name="france" id="team">
+                France
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>More and More choice</legend>
+            <label for="player">
+                <input type="checkbox" name="players" id="massi">
+                Massi
+            </label>
+            <label for="player">
+                <input type="checkbox" name="players" id="dybala">
+                Dy Bala
+            </label>
+            <label for="player">
+                <input type="checkbox" name="players" id="demariya">
+                Demariya
+            </label>
+        </fieldset><br>
+        <h3>more info...</h3>
+        <textarea cols="50" rows="5"></textarea><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Roll</th>
+                <th>Gpa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Md Asif</td>
+                <td>01</td>
+                <td>5.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Md Ikbal</td>
+                <td>02</td>
+                <td>4.00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rakib Hasan</td>
+                <td>03</td>
+                <td>3.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
